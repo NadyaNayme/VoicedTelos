@@ -22648,7 +22648,7 @@ function getBossStartDialogue() {
                         played_audio.weakAnimaBomb = false;
                         played_audio.instantKillBomb = false;
                         played_audio.activatingAFont = false;
-                    }, 60000);
+                    }, 30000);
                 }
             }
             return [2 /*return*/];
@@ -22689,7 +22689,7 @@ function readChatbox() {
                                 anima_audio_1.pause();
                                 anima_audio_1.currentTime = 0;
                                 played_audio.anima = false;
-                            }, 60000);
+                            }, 30000);
                         }
                     }
                     if ((match === null || match === void 0 ? void 0 : match.indexOf('Gielinor, give me strength')) > -1) {
@@ -22702,7 +22702,7 @@ function readChatbox() {
                                 uppercut_audio_1.pause();
                                 uppercut_audio_1.currentTime = 0;
                                 played_audio.uppercut = false;
-                            }, 60000);
+                            }, 30000);
                         }
                     }
                     if ((match === null || match === void 0 ? void 0 : match.indexOf('Hold still, invader')) > -1) {
@@ -22715,7 +22715,7 @@ function readChatbox() {
                                 stun_audio_1.pause();
                                 stun_audio_1.currentTime = 0;
                                 played_audio.stun = false;
-                            }, 60000);
+                            }, 30000);
                         }
                     }
                     if ((match === null || match === void 0 ? void 0 : match.indexOf('SO. MUCH. POWER!')) > -1) {
@@ -22728,7 +22728,7 @@ function readChatbox() {
                                 soMuchPower_audio_1.pause();
                                 soMuchPower_audio_1.currentTime = 0;
                                 played_audio.soMuchPower = false;
-                            }, 60000);
+                            }, 30000);
                         }
                     }
                     if ((match === null || match === void 0 ? void 0 : match.indexOf('Let the anima consume you')) > -1) {
@@ -22741,7 +22741,7 @@ function readChatbox() {
                                 weakAnimaBomb_audio_1.pause();
                                 weakAnimaBomb_audio_1.currentTime = 0;
                                 played_audio.weakAnimaBomb = false;
-                            }, 60000);
+                            }, 30000);
                         }
                     }
                     if ((match === null || match === void 0 ? void 0 : match.indexOf('You dare to defy me?')) > -1) {
@@ -22767,7 +22767,7 @@ function readChatbox() {
                                 activatingAFont_audio_1.pause();
                                 activatingAFont_audio_1.currentTime = 0;
                                 played_audio.activatingAFont = false;
-                            }, 60000);
+                            }, 30000);
                         }
                     }
                 });
