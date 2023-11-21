@@ -107,7 +107,14 @@ async function getBossStartDialogue() {
 				fight_start_audio.pause();
 				fight_start_audio.currentTime = 0;
 				played_audio.fight_start = false;
-			}, 20000);
+				played_audio.anima = false;
+				played_audio.uppercut = false;
+				played_audio.stun = false;
+				played_audio.soMuchPower = false;
+				played_audio.weakAnimaBomb = false;
+				played_audio.instantKillBomb = false;
+				played_audio.activatingAFont = false;
+			}, 60000);
 		}
 	}
 }
@@ -141,7 +148,7 @@ async function readChatbox() {
 						anima_audio.pause();
 						anima_audio.currentTime = 0;
 						played_audio.anima = false;
-					}, 20000);
+					}, 60000);
 				}
 			}
 			if (match?.indexOf('Gielinor, give me strength') > -1) {
@@ -156,7 +163,7 @@ async function readChatbox() {
 						uppercut_audio.pause();
 						uppercut_audio.currentTime = 0;
 						played_audio.uppercut = false;
-					}, 20000);
+					}, 60000);
 				}
 			}
 			if (match?.indexOf('Hold still, invader') > -1) {
@@ -171,7 +178,7 @@ async function readChatbox() {
 						stun_audio.pause();
 						stun_audio.currentTime = 0;
 						played_audio.stun = false;
-					}, 20000);
+					}, 60000);
 				}
 			}
 			if (match?.indexOf('SO. MUCH. POWER!') > -1) {
@@ -186,7 +193,7 @@ async function readChatbox() {
 						soMuchPower_audio.pause();
 						soMuchPower_audio.currentTime = 0;
 						played_audio.soMuchPower = false;
-					}, 20000);
+					}, 60000);
 				}
 			}
 			if (match?.indexOf('Let the anima consume you') > -1) {
@@ -201,7 +208,7 @@ async function readChatbox() {
 						weakAnimaBomb_audio.pause();
 						weakAnimaBomb_audio.currentTime = 0;
 						played_audio.weakAnimaBomb = false;
-					}, 20000);
+					}, 60000);
 				}
 			}
 			if (match?.indexOf('You dare to defy me?') > -1) {
@@ -231,7 +238,7 @@ async function readChatbox() {
 						activatingAFont_audio.pause();
 						activatingAFont_audio.currentTime = 0;
 						played_audio.activatingAFont = false;
-					}, 20000);
+					}, 60000);
 				}
 			}
 		});
