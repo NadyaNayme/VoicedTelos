@@ -277,7 +277,7 @@ const settingsObject = {
 };
 
 settingsObject.volume.querySelector('input').addEventListener('change', (e) => {
-	played_audio.volume = parseInt(settingsObject.volume.querySelector('input').value, 10);
+	played_audio.volume = parseInt(settingsObject.volume.querySelector('input').value, 10) / 100;
 });
 
 window.onload = function () {
@@ -294,7 +294,7 @@ window.onload = function () {
 		played_audio.volume = parseInt(
 			settingsObject.volume.querySelector('input').value,
 			10
-		);
+		) / 100;
 		startApp();
 	} else {
 		let addappurl = `alt1://addapp/${

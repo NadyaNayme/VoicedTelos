@@ -22796,7 +22796,7 @@ var settingsObject = {
     }),
 };
 settingsObject.volume.querySelector('input').addEventListener('change', function (e) {
-    played_audio.volume = parseInt(settingsObject.volume.querySelector('input').value, 10);
+    played_audio.volume = parseInt(settingsObject.volume.querySelector('input').value, 10) / 100;
 });
 window.onload = function () {
     //check if we are running inside alt1 by checking if the alt1 global exists
@@ -22808,7 +22808,7 @@ window.onload = function () {
         Object.values(settingsObject).forEach(function (val) {
             helperItems.settings.before(val);
         });
-        played_audio.volume = parseInt(settingsObject.volume.querySelector('input').value, 10);
+        played_audio.volume = parseInt(settingsObject.volume.querySelector('input').value, 10) / 100;
         startApp();
     }
     else {
