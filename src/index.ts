@@ -268,10 +268,6 @@ export function startApp() {
 
 const settingsObject = {
 	settingsHeader: sauce.createHeading('h2', 'Settings'),
-	automaticScanning: sauce.createCheckboxSetting(
-		'automaticScanning',
-		'Automatic Scanning'
-	),
 	volume: sauce.createRangeSetting('volume', 'Volume', {
 		defaultValue: 100,
 		min: 0,

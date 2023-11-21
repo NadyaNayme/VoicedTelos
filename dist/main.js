@@ -22788,7 +22788,6 @@ function startApp() {
 }
 var settingsObject = {
     settingsHeader: _a1sauce__WEBPACK_IMPORTED_MODULE_0__.createHeading('h2', 'Settings'),
-    automaticScanning: _a1sauce__WEBPACK_IMPORTED_MODULE_0__.createCheckboxSetting('automaticScanning', 'Automatic Scanning'),
     volume: _a1sauce__WEBPACK_IMPORTED_MODULE_0__.createRangeSetting('volume', 'Volume', {
         defaultValue: 100,
         min: 0,
