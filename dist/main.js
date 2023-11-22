@@ -22637,17 +22637,17 @@ function getBossStartDialogue() {
                 if (!played_audio.fight_start) {
                     played_audio.fight_start = true;
                     fight_start_audio_1.play();
+                    played_audio.anima = false;
+                    played_audio.uppercut = false;
+                    played_audio.stun = false;
+                    played_audio.soMuchPower = false;
+                    played_audio.weakAnimaBomb = false;
+                    played_audio.instantKillBomb = false;
+                    played_audio.activatingAFont = false;
                     setTimeout(function () {
                         fight_start_audio_1.pause();
                         fight_start_audio_1.currentTime = 0;
                         played_audio.fight_start = false;
-                        played_audio.anima = false;
-                        played_audio.uppercut = false;
-                        played_audio.stun = false;
-                        played_audio.soMuchPower = false;
-                        played_audio.weakAnimaBomb = false;
-                        played_audio.instantKillBomb = false;
-                        played_audio.activatingAFont = false;
                     }, 30000);
                 }
             }
@@ -22689,7 +22689,7 @@ function readChatbox() {
                                 anima_audio_1.pause();
                                 anima_audio_1.currentTime = 0;
                                 played_audio.anima = false;
-                            }, 30000);
+                            }, 60000);
                         }
                     }
                     if ((match === null || match === void 0 ? void 0 : match.indexOf('Gielinor, give me strength')) > -1) {

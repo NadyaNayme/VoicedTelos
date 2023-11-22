@@ -103,17 +103,17 @@ async function getBossStartDialogue() {
 		if (!played_audio.fight_start) {
 			played_audio.fight_start = true;
 			fight_start_audio.play();
+			played_audio.anima = false;
+			played_audio.uppercut = false;
+			played_audio.stun = false;
+			played_audio.soMuchPower = false;
+			played_audio.weakAnimaBomb = false;
+			played_audio.instantKillBomb = false;
+			played_audio.activatingAFont = false;
 			setTimeout(() => {
 				fight_start_audio.pause();
 				fight_start_audio.currentTime = 0;
 				played_audio.fight_start = false;
-				played_audio.anima = false;
-				played_audio.uppercut = false;
-				played_audio.stun = false;
-				played_audio.soMuchPower = false;
-				played_audio.weakAnimaBomb = false;
-				played_audio.instantKillBomb = false;
-				played_audio.activatingAFont = false;
 			}, 30000);
 		}
 	}
@@ -148,7 +148,7 @@ async function readChatbox() {
 						anima_audio.pause();
 						anima_audio.currentTime = 0;
 						played_audio.anima = false;
-					}, 30000);
+					}, 60000);
 				}
 			}
 			if (match?.indexOf('Gielinor, give me strength') > -1) {
